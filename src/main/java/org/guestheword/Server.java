@@ -96,7 +96,7 @@ public class Server {
                     attempts.set(5);
                     output.println("Resultado: correta");
                 } else {
-                    if(attempts.intValue() == 1)git i{
+                    if(attempts.intValue() == 1){
                         output.println("Resultado: tentativasEsgotadas");
                         continue;
                     }
