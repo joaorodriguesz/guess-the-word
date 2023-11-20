@@ -15,6 +15,10 @@ public class Server {
 
     private static String palavra;
 
+    private static BufferedReader input = null;
+
+    private static PrintWriter output = null;
+
     BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
     public static void start(Integer port) {
         try {
@@ -33,8 +37,8 @@ public class Server {
 
     private static void handleClient(Socket clientSocket) {
         try {
-            BufferedReader input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            PrintWriter output = new PrintWriter(clientSocket.getOutputStream(), true);
+            input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            output = new PrintWriter(clientSocket.getOutputStream(), true);
 
             while (true) {
                 String clientChoice = input.readLine();
@@ -86,9 +90,22 @@ public class Server {
                     System.out.println();
                     System.out.println();
                     System.out.println();
+                    resetGame();
+                    continue;
+                }
 
-                    attempts.set(5);
-                    output.println("Dica: " + getRandomChoice());
+                if (clientChoice.length() != 5){
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    output.println("Erro: A palavra precisa ter 5 caracteres.");
+                    resetGame();
                     continue;
                 }
 
@@ -101,7 +118,7 @@ public class Server {
                         continue;
                     }
                     String equalsChar = findCommonCharacters(palavra.trim(), clientChoice.trim());
-                    output.println("Resultado: " + formatString(equalsChar, " - ") + ", Tentativas: " + attempts.decrementAndGet());
+                    output.println("Resultado: " + equalsChar.toUpperCase() + ", Tentativas: " + attempts.decrementAndGet());
                     continue;
                 }
             }
@@ -138,16 +155,15 @@ public class Server {
 
     private static String getRandomChoice() {
         Map<String, String> wordsAndHints = new HashMap<String, String>();
-        wordsAndHints.put("krypton", "O planeta natal do Superman.");
-        wordsAndHints.put("batrang", "Um dispositivo em forma de morcego usado por um famoso super-herói.");
-        wordsAndHints.put("mutante", "Indivíduo com habilidades especiais devido a uma alteração genética.");
-        wordsAndHints.put("gotham", "A cidade sombria onde um vigilante noturno combate o crime.");
-        wordsAndHints.put("asterix", "Pequeno guerreiro gaulês com uma força surpreendente.");
-        wordsAndHints.put("inumanos", "Uma raça de seres superpoderosos na Marvel.");
-        wordsAndHints.put("watchmen", "Uma graphic novel que desconstrói o conceito de super-heróis.");
-        wordsAndHints.put("gibis", "Nome informal para revistas em quadrinhos.");
-        wordsAndHints.put("apocalipse", "Um poderoso vilão mutante na Marvel, conhecido por sua busca pela seleção natural.");
-        wordsAndHints.put("mascara de ferro", "Um enigmático personagem que usa uma máscara metálica, aparecendo em diferentes histórias.");
+        wordsAndHints.put("bytes", "Unidades fundamentais de informação em computação");
+        wordsAndHints.put("stack", "Estrutura de dados baseada no princípio LIFO");
+        wordsAndHints.put("regex", "Padrões de expressão para busca em textos");
+        wordsAndHints.put("shell", "Interface de linha de comando em sistemas operacionais");
+        wordsAndHints.put("queue", "Estrutura de dados baseada no princípio FIFO");
+        wordsAndHints.put("script", "Sequência de comandos a serem executados");
+        wordsAndHints.put("syntax", "Regras de estruturação de uma linguagem de programação");
+        wordsAndHints.put("index", "Posição de um elemento em uma estrutura de dados");
+        wordsAndHints.put("debug", "Processo de encontrar e corrigir falhas em um programa");
 
         Map.Entry<String, String> randomEntry = getRandomEntry(wordsAndHints);
         palavra = randomEntry.getKey();
@@ -164,5 +180,10 @@ public class Server {
         text = text.replaceAll("\\s", "");
 
         return Normalizer.normalize(text, Normalizer.Form.NFD).replaceAll("\\p{M}", "");
+    }
+
+    public static void resetGame(){
+        attempts.set(5);
+        output.println("Dica: " + getRandomChoice());
     }
 }

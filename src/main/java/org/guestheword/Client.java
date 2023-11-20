@@ -53,7 +53,11 @@ public class Client {
                         } else {
                             System.out.println("Contem: " + findAfterFirstSemicolon(response));
                         }
-
+                        continue;
+                    case "Erro":
+                        System.out.println(findAfterFirstSemicolon(response));
+                        System.out.println("Palavra " + findAfterFirstSemicolon(response) + "!");
+                        System.out.println("Jogar novamente? (s/n)");
                         continue;
                 }
             } while (!exit);
