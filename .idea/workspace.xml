@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="readme" />
+    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="readme fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700490861855</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="readme fix">
+      <option name="closed" value="true" />
+      <created>1700491063499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700491063499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,7 +201,8 @@
     <MESSAGE value="finaly" />
     <MESSAGE value="jar" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="readme fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

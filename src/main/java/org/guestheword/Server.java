@@ -156,15 +156,13 @@ public class Server {
 
     private static String getRandomChoice() {
         Map<String, String> wordsAndHints = new HashMap<String, String>();
-        wordsAndHints.put("bytes", "Unidades fundamentais de informação em computação");
-        wordsAndHints.put("stack", "Estrutura de dados baseada no princípio LIFO");
-        wordsAndHints.put("regex", "Padrões de expressão para busca em textos");
-        wordsAndHints.put("shell", "Interface de linha de comando em sistemas operacionais");
-        wordsAndHints.put("queue", "Estrutura de dados baseada no princípio FIFO");
-        wordsAndHints.put("script", "Sequência de comandos a serem executados");
-        wordsAndHints.put("syntax", "Regras de estruturação de uma linguagem de programação");
-        wordsAndHints.put("index", "Posição de um elemento em uma estrutura de dados");
-        wordsAndHints.put("debug", "Processo de encontrar e corrigir falhas em um programa");
+        wordsAndHints.put("bitmap", "Tipo de imagem composta por pixels");
+        wordsAndHints.put("javaee", "Plataforma para desenvolvimento de aplicações corporativas");
+        wordsAndHints.put("python", "Linguagem de programação de alto nível e fácil compreensão");
+        wordsAndHints.put("binary", "Sistema numérico que utiliza apenas 0 e 1 para representar valores");
+        wordsAndHints.put("thread", "Unidade básica de processamento");
+        wordsAndHints.put("string", "Sequência de caracteres");
+        wordsAndHints.put("kernel", "Núcleo do sistema operacional");
 
         Map.Entry<String, String> randomEntry = getRandomEntry(wordsAndHints);
         palavra = randomEntry.getKey();
