@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Server {
 
-    static private AtomicInteger attempts = new AtomicInteger(5);
+    static private AtomicInteger attempts = new AtomicInteger(6);
 
     private static String palavra;
 
@@ -26,6 +26,7 @@ public class Server {
             System.out.println("Aguardando conexões...");
             Socket clientSocket = serverSocket.accept();
             System.out.println("Conectado ao servidor. Let's play guess the word!");
+            System.out.println("Porta: " + port);
             System.out.println("Cliente conectado: " + clientSocket.getInetAddress().getHostAddress() + "\n");
             System.out.println("Para iniciar digite: 'start'");
 
@@ -94,7 +95,7 @@ public class Server {
                     continue;
                 }
 
-                if (clientChoice.length() != 5){
+                if (clientChoice.length() != 6){
                     System.out.println();
                     System.out.println();
                     System.out.println();
@@ -104,13 +105,13 @@ public class Server {
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    output.println("Erro: A palavra precisa ter 5 caracteres.");
+                    output.println("Erro: A palavra precisa ter 6 caracteres.");
                     resetGame();
                     continue;
                 }
 
                 if(removeSpecialCaracters(palavra).equals(removeSpecialCaracters(clientChoice))){
-                    attempts.set(5);
+                    attempts.set(6);
                     output.println("Resultado: correta");
                 } else {
                     if(attempts.intValue() == 1){
@@ -183,7 +184,7 @@ public class Server {
     }
 
     public static void resetGame(){
-        attempts.set(5);
+        attempts.set(6);
         output.println("Dica: " + getRandomChoice());
     }
 }

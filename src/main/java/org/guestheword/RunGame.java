@@ -2,7 +2,7 @@ package org.guestheword;
 
 public class RunGame {
     public static void main(String[] args) {
-        String port = args.length >= 0 ? "8081" : args[0];
+        String port = "8088";
         new Thread(() -> Server.start(Integer.valueOf(port))).start();
 
         try {
