@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/guestheword/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guestheword/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/guestheword/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guestheword/Server.java" afterDir="false" />
-    </list>
+    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="finaly" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,33 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700088521761</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finaly">
+      <option name="closed" value="true" />
+      <created>1700484317035</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700484317035</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/guestheword/Client.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/guestheword/Server.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/guestheword/Server.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="finaly" />
+    <option name="LAST_COMMIT_MESSAGE" value="finaly" />
   </component>
 </project>
