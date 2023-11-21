@@ -46,6 +46,10 @@ public class Client {
                         System.out.println(response);
                         System.out.println("Digite a palvra abaixo:");
                         continue;
+                    case "Erro":
+                        System.out.println(findAfterFirstSemicolon(response));
+                        System.out.println("Jogar novamente? (s/n)");
+                        continue;
                     case "Resultado":
                         if(findAfterFirstSemicolon(response).equals("correta") || findAfterFirstSemicolon(response).equals("tentativasEsgotadas")){
                             System.out.println("Palavra " + findAfterFirstSemicolon(response) + "!");
@@ -53,11 +57,6 @@ public class Client {
                         } else {
                             System.out.println("Contem: " + findAfterFirstSemicolon(response));
                         }
-                        continue;
-                    case "Erro":
-                        System.out.println(findAfterFirstSemicolon(response));
-                        System.out.println("Palavra " + findAfterFirstSemicolon(response) + "!");
-                        System.out.println("Jogar novamente? (s/n)");
                         continue;
                 }
             } while (!exit);

@@ -81,21 +81,12 @@ public class Server {
                     System.exit(1);
                 }
 
-                if (clientChoice.equals("start") || clientChoice.equals("s")) {
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    resetGame();
-                    continue;
-                }
+                if (clientChoice.equals("start") || clientChoice.equals("s") || clientChoice.length() != 6) {
+                    if(clientChoice.length() != 6 && !clientChoice.equals("start") && !clientChoice.equals("s")){
+                        output.println("Erro: A palavra precisa ter 6 caracteres.");
+                        continue;
+                    }
 
-                if (clientChoice.length() != 6){
                     System.out.println();
                     System.out.println();
                     System.out.println();
@@ -105,7 +96,6 @@ public class Server {
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    output.println("Erro: A palavra precisa ter 6 caracteres.");
                     resetGame();
                     continue;
                 }
