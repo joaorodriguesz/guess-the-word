@@ -83,7 +83,7 @@ public class Server {
 
                 if (clientChoice.equals("start") || clientChoice.equals("s") || clientChoice.length() != 6) {
                     if(clientChoice.length() != 6 && !clientChoice.equals("start") && !clientChoice.equals("s")){
-                        output.println("Erro: A palavra precisa ter 6 caracteres.");
+                        output.println("Erro: [Erro] A palavra precisa ter ( 6 ) caracteres (O jogo será reiniciado!).");
                         continue;
                     }
 
