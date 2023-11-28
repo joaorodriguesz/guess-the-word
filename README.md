@@ -35,3 +35,7 @@ Ao enviar a palavra para o servidor, o servidor informará se a palavra está co
    ```bash
    java -jar guess-the-word.jar
    ```
+
+### OBS:
+
+> *A aplicação ira executar por padrão na porta 8088*
