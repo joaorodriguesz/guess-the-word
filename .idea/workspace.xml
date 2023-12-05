@@ -10,12 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="fix code">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/guess_the_word_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/client/client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/server/server.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-    </list>
+    <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="fix code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -283,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701742155744</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1701742591055</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701742591055</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

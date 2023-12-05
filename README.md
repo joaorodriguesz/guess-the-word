@@ -30,10 +30,12 @@ Ao enviar a palavra para o servidor, o servidor informará se a palavra está co
    cd guess-the-word/out/artifacts/guess_the_word_jar
    ```
 
-4. Execute o arquivo JAR 
+4. Execute os arquivos JAR 
 
    ```bash
-   java -jar guess-the-word.jar
+   java -jar server.jar
+   
+   java -jar client.jar <IP>
    ```
 
 ### OBS:
