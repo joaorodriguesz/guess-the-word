@@ -27,7 +27,7 @@ Ao enviar a palavra para o servidor, o servidor informará se a palavra está co
 2. Navegue até o diretório:
 
    ```bash
-   cd guess-the-word/out/artifacts/guess_the_word_jar
+   cd guess-the-word/out/artifacts
    ```
 
 4. Execute os arquivos JAR 
