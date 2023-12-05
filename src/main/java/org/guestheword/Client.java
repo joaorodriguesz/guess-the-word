@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Client {
     public static String findBeforeFirstColon(String text) {
@@ -36,7 +37,15 @@ public class Client {
             String response;
             String userChoice;
             Boolean exit = false;
+            Boolean init = true;
             do {
+                if(init){
+                    Thread.sleep(1000);
+                    System.out.println("Para iniciar digite: 'start'");
+                }
+
+                init = Boolean.FALSE;
+
                 userChoice = userInput.readLine();
                 output.println(userChoice);
                 response = input.readLine();
@@ -65,6 +74,10 @@ public class Client {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    public static void main(String[] args) {
+        String port = "8088";
+        new Thread(() -> Client.start(args[0], Integer.valueOf(port))).start();
     }
 }
 

@@ -28,7 +28,6 @@ public class Server {
             System.out.println("Conectado ao servidor. Let's play guess the word!");
             System.out.println("Porta: " + port);
             System.out.println("Cliente conectado: " + clientSocket.getInetAddress().getHostAddress() + "\n");
-            System.out.println("Para iniciar digite: 'start'");
 
             new Thread(() -> handleClient(clientSocket)).start();
         } catch (Exception e) {
@@ -174,5 +173,17 @@ public class Server {
     public static void resetGame(){
         attempts.set(6);
         output.println("Dica: " + getRandomChoice());
+    }
+
+    public static void main(String[] args) {
+        String port = "8088";
+        new Thread(() -> Server.start(Integer.valueOf(port))).start();
+
+        try {
+            Thread.sleep(1000);
+            System.out.println("Init port: " + port );
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
