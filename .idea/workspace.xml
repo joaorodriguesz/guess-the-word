@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="client" />
+      <artifact name="client:jar" />
       <artifact name="server:jar" />
     </artifacts-to-build>
   </component>
@@ -11,13 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0918b3a-dc09-4342-81b4-49f49063bb96" name="Changes" comment="fix code">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/server_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/guess_the_word_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/client.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/guess_the_word_jar/guess-the-word.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/guestheword/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guestheword/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/guestheword/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guestheword/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701135859435</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1701741170389</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701741170389</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1701741276275</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701741276276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,6 +289,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/guestheword/Server.java</url>
           <line>84</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/guestheword/Client.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
